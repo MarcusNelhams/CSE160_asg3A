@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Virtual World</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <div id="output"></div>
+
+    <p> Camera Angle
+      <input type="range" min="0" max="180" value="0" class="slider" id="globSlide">
+    </p>
+
+    <p> Front Legs Angle:
+      <input type="range" min="-45" max="45" class="slider" id="UFRLegSlide">
+        Animation: 
+      <button type="button" id="FLAnimationOnButton">On</button>
+      <button type="button" id="FLAnimationOffButton">Off</button>
+    </p>
+    <p> Front Knees Angle:
+      <input type="range" min="-45" max="45" class="slider" id="FRKSlide">
+    </p>
+    <p> Front hooves Angle:
+      <input type="range" min="-13" max="13" class="slider" id="FHSlide">
+    </p>
+
+    <p>Name: Marcus Nelhams</p>
+    <p>Email: mnelhams@ucsc.edu</p>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cone.js"></script>
+    <script src="asg3A.js"></script>
+  </body>
+</html>
